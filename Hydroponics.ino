@@ -5,12 +5,13 @@
 #define LED_TYPE    WS2812
 #define COLOR_ORDER GRB
 
+const long intervalOn = 14*3600*1000;
+const long intervalOff = 10*3600*1000;
+
 CRGB leds[NUM_LEDS];
 CRGB color;
 unsigned long startTime;
 boolean on;
-long intervalOn = 14*3600*1000;
-long intervalOff = 10*3600*1000;
 
 void setup() {
     delay(3000);
